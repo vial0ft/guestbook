@@ -40,12 +40,9 @@ public class CommentController {
     @RequestMapping(value = "/addComment", method = RequestMethod.POST)
     public String addComment(@Valid @ModelAttribute("comment") Comment c,
                              BindingResult result, Model model ){
-        log.info("THERE!!!");
-        System.out.println("AND THERE!!!");
 
         if (!result.hasErrors())
             this.commentService.addComment(c);
-//        model.addAttribute("comment", new Comment());
         model.addAttribute("listAllComments",this.commentService.findAll());
         return "book1";
     }

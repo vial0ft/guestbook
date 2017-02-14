@@ -24,5 +24,5 @@ Second, probably you haven't database and table in your Postgres. For creating, 
 
 And then you can build this project.
 
-If there isn't any errors try run it in browser.
+If there aren't any errors try run it in browser.
  

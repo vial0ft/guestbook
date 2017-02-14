@@ -2,7 +2,7 @@
 
 This is my a test project.
 
-Simple Guestbook... a very simple guestbook usually.
+Simple Guestbook... a very simple guestbook actually.
 
 Single-page web java application.
 I've used:

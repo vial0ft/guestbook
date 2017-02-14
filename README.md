@@ -6,8 +6,23 @@ Simple Guestbook... a very simple guestbook usually.
 
 Single-page web java application.
 I've used:
+Tomcat application server.
+Maven - like a build manager.
 Spring MVC - for servlets.
 Spring JPA + Hibernate - for entities management.
-PostgreSQL - for storingsssadsdsad123123123
+PostgreSQL - for storing.
 and a little bit
-Bootstrap - for not very ugly design on a page(not )    
+Bootstrap - for not very ugly design on a page(not help).
+
+
+Project has been created in NetBeans IDE and it's working (I checked it).  
+
+Intstruction:
+
+After import project on your computer, first of all, make sure you have PostgreSQL and it's working.
+Second, probably you haven't database and table in your Postgres. For creating, you need execute sql script  Create_guestbook_db_and_user_comments_table.sql in directory src/main/resources.
+
+And then you can build this project.
+
+If there isn't any errors try run it in browser.
+ 

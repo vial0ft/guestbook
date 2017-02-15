@@ -26,6 +26,7 @@ import java.util.List;
 @Transactional
 public class CommentServiceImpl implements CommentService{
     
+    private static final String FIND_ALL_COMMENTS = "select u.id_comment, u.username, u.comment, u.creation_date from user_comments u order by 1 desc";
     private Log log = LogFactory.getLog(CommentServiceImpl.class);
     
     @PersistenceContext
@@ -34,7 +35,7 @@ public class CommentServiceImpl implements CommentService{
     @Transactional(readOnly=true)
     @Override
     public List<Comment> findAll() {
-        List<Comment> comments = em.createNativeQuery("select u.id_comment, u.username, u.comment, u.creation_date from user_comments u order by 1 desc", Comment.class).getResultList();
+        List<Comment> comments = em.createNativeQuery(FIND_ALL_COMMENTS, Comment.class).getResultList();
         return comments;
     }
     

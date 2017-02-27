@@ -20,7 +20,8 @@ Project has been created in NetBeans IDE and it's working (I checked it).
 Intstruction:
 
 After import project on your computer, first of all, make sure you have PostgreSQL and it's working.
-Second, probably you haven't database and table in your Postgres. For creating, you need execute sql script  Create_guestbook_db_and_user_comments_table.sql in directory src/main/resources.
+Second, probably you haven't database and table in your Postgres.
+For creating, you need execute shell script init_db.sh in directory src/main/resources/scripts.
 
 And then you can build this project.
 

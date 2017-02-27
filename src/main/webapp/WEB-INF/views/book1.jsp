@@ -3,6 +3,7 @@
 <%@	taglib	uri="http://www.springframework.org/tags/form"	prefix="form"	%>
 <%@	page	session="false"	%>
 <html>
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8">
     <head>
         <title>Guestbook</title>
         <spring:url value="/resources/css/bootstrap.min.css" var="bootstrapCss" />
@@ -53,11 +54,12 @@
             <form:form action="${addAction}" commandName = "comment">
                 <form:label path="userName"> Your name</form:label><br>
 
-                <form:input size="20" path="userName"/>
+                <form:input size="20" path="userName"/><br>
                 <form:errors path="userName"/> <br>
                 <br>
                 <form:label path="comment"> Comment:</form:label><br>
-                <form:textarea rows="5" cols="45" path="comment"/><form:errors path="comment"/><br>
+                <form:textarea rows="5" cols="45" path="comment"/><br>
+                <form:errors path="comment"/><br>
                 <br>
                 <input	type="submit" value="add"/>
 

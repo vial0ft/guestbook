@@ -41,8 +41,10 @@ public class CommentController {
     public String addComment(@Valid @ModelAttribute("comment") Comment c,
                              BindingResult result, Model model ){
 
-        if (!result.hasErrors())
+        if (!result.hasErrors()){
             this.commentService.addComment(c);
+            model.addAttribute("comment", new Comment());
+        }
         model.addAttribute("listAllComments",this.commentService.findAll());
         return "book1";
     }

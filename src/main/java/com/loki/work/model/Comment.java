@@ -30,7 +30,7 @@ public class Comment implements Serializable {
     private Long id;
 
     @NotNull()
-    @Size(min=1,message = "Enter your name")
+    @Size(min=1,max=50,message = "Enter name less than 50 characters e.g. Bob. Bob is a great name.")
     @Column(name = "username")
     private String userName;
 
